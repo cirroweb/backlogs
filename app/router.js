@@ -5,6 +5,9 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+	this.route('dynia');
+	this.route('for-love-and-lemons');
+	this.route('gates-family-foundation');
 });
 
 export default Router;
