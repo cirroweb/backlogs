@@ -49,7 +49,7 @@ body
   background: $gray
   color: $black
   height: 100%
-  font-size: 1.3rem
+  font-size: 1.2rem
   &.dark
     background: $black
     color: white
@@ -134,8 +134,10 @@ blockquote, q
 
 mark
   background-color: #E2EDC1
-  padding: 0.3em
-  margin-left: -0.4em
+  padding: 0.1rem 0
+  margin-left: 0
+  &.kind
+    background-color: lighten($purple, 8%)
 
 blockquote
   &:before, &:after
@@ -186,6 +188,8 @@ nav
   clear: both
   height: 0
 
+.red
+  color: $red
 
 .container
   padding: 0 0 6rem
@@ -199,6 +203,8 @@ section
   margin-bottom: 4rem
   h2
     margin-bottom: 1rem
+  &.disabled-list
+    color: darken($gray, 20%)
 
 header
   padding: 12rem 0 4rem

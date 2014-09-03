@@ -9,12 +9,15 @@ Router.map(function() {
 	this.route('info');
 	this.route('420');
 
+	this.resource('project', function() {
+		this.route('dotfolio');
+	});
+
 	this.resource('client', function() {
 		this.route('dynia');
 		this.route('for-love-and-lemons');
 		this.route('gates-family-foundation');
 		this.route('play-plus-record');
-		this.route('dotfolio');
 		this.route('34-degrees');
 	});
 });

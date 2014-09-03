@@ -1,0 +1,113 @@
+<header>
+	<h1 class="text-center">dotFolio</h1>
+</header>
+
+<div class="container">
+	<section>
+		<h2>Overview</h2>
+		<p>Below you will find a list of features translated from the client contract. Completed items are marked in <mark>yellow</mark> and in-kind features are marked in <mark class="kind">purple</mark>. Below the feature list is the Backlog section where wish list items will be tracked. You can prioritize these features and choose to build them at additoinal cost.</p>
+	</section>
+	<section>
+		<h2>Staging Site</h2>
+		<p>
+			<a href="http://artbox-staging.herokuapp.com/" target="_blank">http://artbox-staging.herokuapp.com/</a>
+		</p>
+	</section>
+	<section>
+		<h2>Feature List</h2>
+		<ul>
+			<li><h3>Planning and Foundation</h3></li>
+			<ul>
+				<li><mark>Base Styling - A style guide that includes color palette, fonts and form styling.</mark></li>
+				<li><mark>Layout and UI design - Pages and interfaces of the site will be fully designed in Illustrator.</mark></li>
+				<li><mark>Data Modeling - The various components of the application, such as Artists, Contacts, and Projects, will be designed and built. Their relationships to each other will also be fully articulated.</mark></li>
+				<li><mark>Database Architecture - A database designed for extensibility and for managing large and varied data will be constructed.</mark></li>
+				<li><mark>Comprehensive Testing Suite - A suite of tests will be created that will indicate at all times, throughout the life of the application, how healthy the application is, if there is a failure in functionality and where that failure can be found in the code.</mark></li>
+			</ul>
+			<li><h3>Artist Portal</h3></li>
+			<ul>
+				<li><mark>As part of signing up, Artists will be required to agree to the appropriate terms and conditions.</mark></li>
+				<li><mark>A welcome page that introduces Artists to the portal and provides instructions on how to create an account and log in. </mark></li>
+				<li><mark>An email confirmation that will notify artists of their new account, providing them a one-time link to log in and make their password.</mark></li>
+				<li><mark class="kind">The ability for artists to create a temporary profile that can be approved by NINEdotARTS managers, that will then open up their profile</mark></li>
+				<li><mark>A profile edit page where artists can enter information pertinent to becoming consigned with Nine Dot.</mark></li>
+				<li><mark>A profile view page where the artist can see how their profile is displayed to the Nine Dot admins.</mark></li>
+				<li><mark>An upload tool where artists can drag and drop multiple images onto their profile to upload their artwork.</mark></li>
+				<li><mark>Server processing of uploaded images to allow for maximum resolution while also minimizing the file size, so that images are quickly loaded when viewing them in the system.</mark></li>
+				<li><mark>A view on the profile (or perhaps a separate profile page) that displays the artist’s uploaded artwork.</mark></li>
+				<li><mark>The ability for Artists to tag artwork as going to be delivered to Nine Dot for consignment.</mark></li>
+				<li><mark>The ability for Nine Dot to confirm the receipt of artwork from artists.</mark></li>
+				<li><mark>The ability for Nine Dot admins to log into the portal and see all of the artists’ profiles and artworks.</mark></li>
+				<li><mark>The ability for an admin to add notes to an artist’s profile to be displayed in chronological or reverse chronological order, which can be used to keep a log of recent communication between the artist and Nine Dot, or general status updates on the artist.</mark></li>
+				<li><mark>The ability for admins to tag individual artists with descriptive words in order to categorize artists. </mark></li>
+				<li><mark>A page for admins to view a list of all of the artists in the system, in a concise table that can be filtered by artists tags and sorted by name, email, and a limited set of other fields. </mark></li>
+				<li><mark>A search functionality that will allow admins to search for artists by name, email and a limited set of other fields.</mark></li>
+				<li><mark>The ability for admins to tag artwork within an artist’s profile with descriptive words in order to categorize artwork.</mark></li>
+				<li><mark>The ability to add meta data to an artwork including Title, Retail Price, Wholesale Price, Size, Medium.</mark></li>
+				<li><mark>The ability to add to an artwork a list of price options for things like different print sizes.</mark></li>
+				<li><mark>An artwork browsing page where admins can view all of the artwork in the system, filter by artist, artist tag, or artwork tag, and infinitely scroll through all or filtered results when there are too many to load on one page.</mark></li>
+				<li><mark class="kind"> Addition of a Help page for artist, creation of copy for this page and a redirect from the login page for artists to this page </mark></li>
+				<li><mark class="kind"> Ability for artist to upload their W9 that can be viewed and downloaded by NINE dot ARTS </mark></li>
+				<li><mark class="kind">Grid view of all artists that shows their first artwork as a profile image</mark></li>
+				<li><mark class="kind">Infinite scroll through artists on all artists page</mark></li>
+				<li><mark class="kind">Ability for NINE dot ARTS managers to manage a list of galleries and manage the galleries in the system</mark></li>
+				<li><mark class="kind">Ability for an artist to add an associated gallery to their profile</mark></li>
+				<li><mark class="kind">A gallery page that links to the artists and artworks tied to that gallery </mark></li>
+			</ul>
+			<li><h3>Customer Relationship Management (CRM)</h3></li>
+			<ul>
+				<li><mark>A password protected portal where all the information will be kept and only accessible by Nine Dot admins.</mark></li>
+				<li><mark>The ability to create a company with all pertinent, general information.</mark></li>
+				<li><mark>The ability to create a contact with all pertinent information such as contact name, email, and a picture.</mark></li>
+				<li><mark>The ability to associate a contact with a company.</mark></li>
+				<li><mark>A contact edit page where the contact’s information can be updated.</mark></li>
+				<li><mark>A contact view page where admins can view the contact’s information along with other features of the contact’s page.</mark></li>
+				<li><mark>The ability to add notes to a profile to be displayed in either chronological or reverse chronological order, which can be used to keep a log of recent communication between the contact and Nine Dot, or general status updates for the contact.</mark></li>
+				<li><mark>The ability to tag contacts with descriptive words in order to categorize contacts.</mark></li>
+				<li><mark>A page to view a list of all contacts in the system, in a concise table that can be filtered by contact tags and sorted by name, email, and a limited set of other fields.</mark></li>
+				<li><mark>A search functionality that will allow admins to search for contacts by name, email and a limited set of other fields.</mark></li>
+				<li><mark>The ability to upload files and attach them to a contact. </mark></li>
+				<li><mark>A simple script that will work through an S3 folder of legacy client folders and attach the included files onto a contact that matches the name of the folder.</mark></li>
+				<li><mark class="kind">Addition of user accounts tab on manager dashboard and ability to view all user accounts</mark></li>
+				<li><mark class="kind">The ability for NINE dot ARTS managers to invite other manager users</mark></li>
+				<li><mark class="kind">The ability for NINE dot ARTS managers to create artists and invite them to the system</mark></li>
+				<li><mark class="kind">A place on the dashboard to list all artwork that is marked as to be delivered to NINE dot ARTS</mark></li>
+				<li><mark class="kind">Infinite scroll through contacts on all contacts page</mark></li>
+				<li><mark class="kind">Infinite scroll through organizations on all organizations page</mark></li>
+			</ul>
+			<li><h3>Project Management System</h3></li>
+			<ul>
+				<li><mark>A password protected portal where all the information will be kept and only accessible by Nine Dot admins.</mark></li>
+				<li><mark>Nine Dot staff will have a general dashboard where they can view the current state of all projects and recent information or actions on them.</mark></li>
+				<li><mark>The ability to create a project with all pertinent information such as a project name, due dates, and a description.</mark></li>
+				<li><mark>The ability to attach an externally created PDF of a contract to the project.</mark></li>
+				<li><mark>A project edit page where the information for a project can be updated.</mark></li>
+				<li><mark>A project view page where the project information can be viewed along with the other features of the project’s page. </mark></li>
+				<li><mark>Within a project page, an artist and contact lookup tool so that artists and contacts can be tied to a project.</mark></li>
+				<li><mark>An expansion of the Artist Portal and CRM so that on an Artist or Contact profile page, projects can be looked up so that artists and contacts can be added to projects from their profile pages.</mark></li>
+				<li><mark>An expansion of the Artist Portal’s artwork browsing page so that artwork can be added directly to a project when viewing an individual piece of art.</mark></li>
+				<li><mark>The ability to quick add artwork from a Project page using the same drag-and-drop tool available on Artist Profiles.</mark></li>
+				<li><mark>The ability to add notes to a project to be displayed in either chronological or reverse chronological order, which can be used to keep a log of recent activity for a project.</mark></li>
+				<li>The ability to tag notes on a project to an Artist or Contact so that the project note shows up in the Artist’s or Contact’s notes on their profile page.</li>
+				<li>An expansion of the Artist Portal and CRM so that notes in artist and contact profiles can be tagged to a particular project so that the notes also show up in the project’s note log. </li>
+				<li><mark>The ability to categorize artwork within a project into other project specific categories such as “showing client”, “selected”, etc.</mark></li>
+				<li>The ability to add project specific framing information (Molding, matte, glass, cost) to artwork.</li>
+				<li>The ability to display a list of framing information for a project that could then be printed and sent to framers to get price quotes.</li>
+				<li>The ability to allow clients to login to the system to review the artwork that was selected/passed on, a floor plan for where the artwork will go, and view the total cost for a project. If the client is satisfied the project at this point, they will be able to accept the project as being ready, and invoices as well as PO orders will be automatically created and sent to the appropriate recipients.</li>
+				<li>The ability to display an invoice of artwork for a client.</li>
+				<li>The ability to add custom line items to invoices. </li>
+				<li>The ability to change what artwork pricing display between Retail and Wholesale based on a Client or Project setting.</li>
+				<li>The ability to create email reminders based both on simple time variables like “two weeks” or triggered by particular actions on a project like a client completing a review.</li>
+				<li>The ability to create Sales Tax Rules that will be applied when invoices are created. </li>
+				<li>The ability for an accounting advisor to login and manage Sales Tax Rules as well as be able to access Invoices, POs and Quickbooks exports.</li>
+				<li>The ability to export simple CSV files of invoices and purchase orders for import into Quickbooks. </li>
+				<li>The ability to mark art in the Artist Library as purchased and notify the artist via email with a purchase order.</li>
+				<li>The ability to view general reports on revenue by different categories as well as client volume by types as well.</li>
+			</ul>
+		</ul>
+	</section>
+	<section id="backlog" class="disabled-list">
+		<h2>Backlog</h2>
+	</section>
+</div>
+    
