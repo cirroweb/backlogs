@@ -45,14 +45,27 @@ $ git ci -m 'some message'
 $ git push origin master
 ```
 Until we find a solution we need to push the `/dist` folder to the branch gh-pages but when we build ember it clears the entire `/dist` folder. This is an issue because we need to keep the CNAME file in there for the DNS. 
-```
-$ git co deploy //checkout deploy branch
-$ git rebase master //rebase off master
-$ ember build --environment production //build the site
-$ git co -- dist/CNAME //Keep the CNAME file in the dist folder
+
+```bash
+#checkout deploy branch
+$ git co deploy 
+
+#rebase off master
+$ git rebase master
+
+#build the site
+$ ember build --environment production
+
+#Keep the CNAME file in the dist folder
+$ git co -- dist/CNAME
 $ git add -A
 $ git rebase --continue
-$ git subtree push --prefix dist origin gh-pages // push to gh-pages subtree
+
+#often your subtree push will fail so it is best to just remove the remote branch before pushing
+$ git push origin :gh-pages
+
+#push to gh-pages subtree
+$ git subtree push --prefix dist origin gh-pages 
 ```
 
 ## Prerequisites
