@@ -10,11 +10,12 @@ You will need the following things properly installed on your computer.
 * [Node.js](http://nodejs.org/) (with NPM) and [Bower](http://bower.io/)
 
 ## Installation
-
-* `git clone https://github.com/cirroweb/backlogs.git` this repository
-* change into the new directory
-* `npm install`
-* `bower install`
+```bash
+$ cd ~/Sites && mkdir cirro-backlogs
+$ git clone https://github.com/cirroweb/backlogs.git cirro-backlogs && cd $_
+$ npm install
+$ bower install
+```
 
 ## Running / Development
 
