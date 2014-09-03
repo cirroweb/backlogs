@@ -1,6 +1,20 @@
-<h2 id='title'>Welcome to Ember.js</h2>
+<div class="border top"></div>
+<div class="border right"></div>
+<div class="border bottom"></div>
+<div class="border left"></div>
 
-{{link-to 'Home' 'index'}}
-{{link-to 'Dynia' 'dynia'}}
+<nav>
+	<div class="nav-wrap left">
+		<h4><a href="http://wearecirro.com" target="_blank">Cirro ⤴</a></h4>
+	</div>
+	<div class="nav-wrap right">
+		<h4>{{link-to 'Info' 'info'}}</h4>
+		<h4><a href="mailto:hello@wearecirro.com">Email Us</a></h4>
+		<h4><a role="button" {{action 'swapColor'}}>☼</a></h4>
+	</div>
+</nav>
+
+{{!link-to 'Home' 'index'}}
+{{!link-to 'Dynia' 'client.dynia'}}
 
 {{outlet}}

@@ -1,0 +1,267 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, 
+blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, 
+img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, 
+center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, 
+tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, 
+figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, 
+time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+*, *:before, *:after
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  -webkit-font-smoothing: subpixel-antialiased
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, 
+nav, section
+  display: block
+
+::selection
+  background: #000
+  color: #FFF
+  text-shadow: none
+
+$black: #111
+$gray: #F1F1F1
+$dark-gray: #373737
+$blue: #0000ff
+$light-blue: #D2FFFF
+$cream: #F9E1D5
+$green: #41AD49
+$red: #FE4A3B
+$purple: #D5B3FF
+
+html
+  height: 100%
+  font-family: "adobe-garamond-pro", "Georgia", serif
+  font-size: 100%
+  line-height: 1.4
+  font-style: normal
+  font-weight: 400
+
+body
+  background: $gray
+  color: $black
+  height: 100%
+  font-size: 1.3rem
+  &.dark
+    background: $black
+    color: white
+    a
+      color: white
+      &:visited, &:hover
+        color: white
+    a, li, p, h1, h2, h3, h4
+      -webkit-font-smoothing: antialiased
+    nav
+      background: $black
+    &.info
+      background: $black
+      nav
+        background: $black
+  &.info
+    background: $cream
+    a, li, p, h1, h2, h3, h4
+      -webkit-font-smoothing: antialiased
+    nav
+      background: $cream
+
+p
+  margin: 10px 0
+
+a
+  color: #231F20
+  text-decoration: none
+  border-bottom: 1px solid
+  padding-bottom: 2px
+  cursor: pointer
+  &:visited, &:hover
+    color: #231F20
+    text-decoration: none
+    border-bottom: 1px solid
+    padding-bottom: 2px
+    cursor: pointer
+
+h1, h2, h3, h4, h5
+  font-family: "futura-pt","Helvetica Neue", "HelveticaNeue", "Helvetica", "Arial", sans-serif
+  font-style: normal
+  font-weight: 500
+  text-rendering: optimizeLegibility
+
+h1
+  font-size: 3.5rem
+  line-height: 1.9
+  margin-bottom: 1.2rem
+
+h2
+  font-size: 1.6rem
+  line-height: 1.3
+
+h3
+  font-size: 1.25rem
+  line-height: 1.1
+
+h4
+  font-size: 1.1rem
+  line-height: 1
+
+ul, ol
+  padding: 0
+  margin: 0 0 10px 20px
+
+li
+  line-height: inherit
+  display: list-item
+  padding: 0.3em
+
+dl
+  margin-bottom: 20px
+
+dt
+  font-weight: 700
+
+dd
+  margin-left: 0
+
+blockquote, q
+  quotes: none
+
+mark
+  background-color: #E2EDC1
+  padding: 0.3em
+  margin-left: -0.4em
+
+blockquote
+  &:before, &:after
+    content: ''
+    content: none
+
+q
+  &:before, &:after
+    content: ''
+    content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+nav
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  border-bottom: 3px solid
+  height: 60px
+  background: $gray
+  z-index: 100
+  & * a
+    border-bottom: none
+    margin: 0 10px
+    &:hover, &:visited
+      border-bottom: none
+  & * h4
+    display: inline
+  .nav-wrap
+    position: absolute
+    top: 15px
+    &.left
+      left: 20px
+    &.right
+      right: 20px
+
+.text-center
+  text-align: center
+
+.clearfix:after
+  visibility: hidden
+  display: block
+  font-size: 0
+  content: " "
+  clear: both
+  height: 0
+
+
+.container
+  padding: 0 0 6rem
+  width: 90%
+  max-width: 55rem
+  margin: 0 auto
+  &.sm
+    max-width: 40rem
+
+section
+  margin-bottom: 4rem
+  h2
+    margin-bottom: 1rem
+
+header
+  padding: 12rem 0 4rem
+  width: 90%
+  max-width: 55rem
+  margin: 0 auto
+  &.sm
+    max-width: 40rem
+
+.price-block
+  width: 33.3%
+  float: left
+  color: white
+  &:nth-child(1)
+    .price-inner
+      background: $green
+  &:nth-child(2)
+    .price-inner
+      background: $blue
+  &:nth-child(3)
+    .price-inner
+      background: $red
+  .price-inner
+    margin: 30px 20px 30px 0
+    min-height: 470px
+    .price
+      text-align: center
+      padding: 30px 20px
+      position: relative
+      &:before
+        content: "⧘"
+        position: absolute
+        bottom: -39px
+        left: 50%
+        margin-left: -20px
+        color: #FFF
+        font-size: 3.3rem
+        text-align: center
+        width: 40px
+        transform: rotate(-90deg)
+        -moz-transform: rotate(-90deg)
+        -webkit-transform: rotate(-90deg)
+        -webkit-font-smoothing: antialiased
+      h1
+        line-height: 1
+        margin: 0
+      p
+        margin: 0 0 20px
+    .price-info
+      font-family: "futura-pt","Helvetica Neue", "HelveticaNeue", "Helvetica", "Arial", sans-serif
+      font-weight: 500
+      font-size: 0.9rem
+      padding: 40px 20px
+      -webkit-font-smoothing: antialiased
+
+.other-block
+  text-align: center
+  padding: 20px 30px 30px
+  margin-bottom: 30px
+  background: darken($cream, 7%)
+  .price
+    margin-bottom: 15px
+  .price-info
+    font-family: "futura-pt","Helvetica Neue", "HelveticaNeue", "Helvetica", "Arial", sans-serif
+    font-weight: 500
+    font-size: 0.9rem
