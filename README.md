@@ -39,7 +39,7 @@ After the site is deployed continue to work in master. The next time you are rea
 ## How to Deploy to gh-pages
 
 commit and push in master
-```
+```bash
 $ git add -A
 $ git ci -m 'some message'
 $ git push origin master
@@ -47,24 +47,29 @@ $ git push origin master
 Until we find a solution we need to push the `/dist` folder to the branch gh-pages but when we build ember it clears the entire `/dist` folder. This is an issue because we need to keep the CNAME file in there for the DNS. 
 
 ```bash
-#checkout deploy branch
-$ git co deploy 
+# If there are others changes in the branch you will need to
+#	delete your local deploy branch
+$ git br -D deploy
 
-#rebase off master
+# Checkout deploy branch
+$ git co -b deploy 
+
+# Rebase off master
 $ git rebase master
 
-#build the site
+# Build the site
 $ ember build --environment production
 
-#Keep the CNAME file in the dist folder
+# Keep the CNAME file in the dist folder
 $ git co -- dist/CNAME
 $ git add -A
 $ git rebase --continue
 
-#often your subtree push will fail so it is best to just remove the remote branch before pushing
+# Often your subtree push will fail so it is best to just remove 
+# the remote branch before pushing
 $ git push origin :gh-pages
 
-#push to gh-pages subtree
+# Push to gh-pages subtree
 $ git subtree push --prefix dist origin gh-pages 
 ```
 
