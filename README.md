@@ -36,6 +36,24 @@ $ git subtree push --prefix dist origin gh-pages
 
 After the site is deployed continue to work in master. The next time you are ready to deploy again, checkout the `deploy` branch, rebase off master `$ git rebase master` then push to the subtree (see prev step).
 
+## How to Deploy to gh-pages
+
+commit and push in master
+```
+$ git add -A
+$ git ci -m 'some message'
+$ git push origin master
+```
+Until we find a solution we need to push the `/dist` folder to the branch gh-pages but when we build ember it clears the entire `/dist` folder. This is an issue because we need to keep the CNAME file in there for the DNS. 
+```
+$ git co deploy //checkout deploy branch
+$ git rebase master //rebase off master
+$ ember build --environment production //build the site
+$ git co -- dist/CNAME //Keep the CNAME file in the dist folder
+$ git add -A
+$ git rebase --continue
+$ git subtree push --prefix dist origin gh-pages // push to gh-pages subtree
+```
 
 ## Prerequisites
 
