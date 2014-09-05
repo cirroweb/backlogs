@@ -19,6 +19,8 @@ Router.map(function() {
 		this.route('gates-family-foundation');
 		this.route('play-plus-record');
 		this.route('34-degrees');
+		this.route('laura-krudener');
+		this.route('taxi');
 	});
 });
 
