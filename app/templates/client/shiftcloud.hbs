@@ -1,0 +1,50 @@
+<div class="container sm">
+  <section>
+    <h2>Overview</h2>
+  </section>
+  <section>
+    <h2>ShiftCloud Feature List</h2>
+    <ul>
+      <li>Design & Base Styling</li>
+      <ul>
+        <li>Color palettes and fonts selected for the site</li>
+        <li>Form elemenst such as inputs, select lists, check boxes, radio buttons, text areas and buttons</li>
+        <li>Large reusable structures such as navigation, page headers footers, image grids, text headers, lists</li>
+        <li>Components such as modals, drop downs, accordions, specifically used for the design of the site</li>
+        <li>The mockup for the main scheduler component</li>
+      </ul>
+      <li>Data Modeling and Architecture</li>
+      <ul>
+        <li>Data models needed for the initial build of ShiftCloud</li>
+        <li>The fields needed for those data models</li>
+        <li>Lines connecting models together that also convey the type of relationship between the models suck as "has many" or "belongs to"</li>
+      </ul>
+      <li>Authentication and Role Management</li>
+      <ul>
+        <li>A general user login page</li>
+        <li>Logging in propmpts redirect to schedule of current week</li>
+        <li>Users will have a profile page where their contact information will live. Users will also be able to see their upcoming shifts listed on this page for a quick reference, and they will be able to see how many hours they are scheduled for.</li>
+        <li>Role-based authentication will allow scheduler -> scheduled hierarchy.</li>
+        <li>Schedulers will has both editing and scheduling power over regular users.</li>
+      </ul>
+      <li>User Notification System</li>
+      <ul>
+        <li>Mandrill SMTP Server Configuration</li>
+         <li>Email notifications for new account that will contain a link to a one-time login where the user can set their password. After the password is set, their account will be active</li>
+         <li> Schedulers will be able to access a user overview page where they will be able to see who has been invited to the site and who has accepted the invitations. </li>
+         <li>Scheduling actions will fire notification hooks that inform the appropriate users of said action. </li>
+      </ul>
+      <li> Scheduling Tool </li>
+      <ul>
+        <li>The view where schedulers can create a preset for any particular day they choose </li>
+        <li>The view where schedulers can schedule employees for shifts within a preset for a day </li>
+        <li> The view where schedulers can chose to have a preset repeat for particular days of the week (M-Sun) </li>
+        <li>The view where employees can view the schedule</li>
+        <li>The view where employees can request coverage for a shift they are scheduled for </li>
+        <li> The view where employees can accept a request for coverage by a fellow employee </li>
+        <li> Automatic emails that get sent to all of the appropriate employees when a request for coverage is made by a separate employee </li>
+        <li> Automatic emails that get sent to the scheduler when an employee has accepted a request for coverage and the scheduler needs to approve the shift switch </li>
+      </ul>
+    </ul>
+  </section>
+</div>
