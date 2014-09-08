@@ -11,6 +11,7 @@ Router.map(function() {
 
 	this.resource('project', function() {
 		this.route('dotfolio');
+		this.route('shopify-theme');
 	});
 
 	this.resource('client', function() {
