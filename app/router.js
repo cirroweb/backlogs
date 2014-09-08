@@ -21,6 +21,7 @@ Router.map(function() {
 		this.route('34-degrees');
 		this.route('laura-krudener');
 		this.route('taxi');
+		this.route('shiftcloud');
 	});
 });
 
