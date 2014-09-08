@@ -55,8 +55,6 @@
 				<li><mark class="kind">Ability for NINE dot ARTS managers to manage a list of galleries and manage the galleries in the system</mark></li>
 				<li><mark class="kind">Ability for an artist to add an associated gallery to their profile</mark></li>
 				<li><mark class="kind">A gallery page that links to the artists and artworks tied to that gallery </mark></li>
- 
-				
 			</ul>
 			<li><h3>Customer Relationship Management (CRM)</h3></li>
 			<ul>
@@ -93,8 +91,8 @@
 				<li><mark>An expansion of the Artist Portal’s artwork browsing page so that artwork can be added directly to a project when viewing an individual piece of art.</mark></li>
 				<li><mark>The ability to quick add artwork from a Project page using the same drag-and-drop tool available on Artist Profiles.</mark></li>
 				<li><mark>The ability to add notes to a project to be displayed in either chronological or reverse chronological order, which can be used to keep a log of recent activity for a project.</mark></li>
-				<li>The ability to tag notes on a project to an Artist or Contact so that the project note shows up in the Artist’s or Contact’s notes on their profile page.</li>
-				<li>An expansion of the Artist Portal and CRM so that notes in artist and contact profiles can be tagged to a particular project so that the notes also show up in the project’s note log. </li>
+				<li>The ability to tag notes on a project to an Artist or Contact so that the project note shows up in the Artist’s or Contact’s notes on their profile page (in progress: LIZ)</li>
+				<li>An expansion of the Artist Portal and CRM so that notes in artist and contact profiles can be tagged to a particular project so that the notes also show up in the project’s note log. (in progress: LIZ)</li>
 				<li><mark>The ability to categorize artwork within a project into other project specific categories such as “showing client”, “selected”, etc.</mark></li>
 				<li>The ability to add project specific framing information (Molding, matte, glass, cost) to artwork.</li>
 				<li>The ability to display a list of framing information for a project that could then be printed and sent to framers to get price quotes.</li>
@@ -111,10 +109,10 @@
 			</ul>
 		</ul>
 	</section>
-		<section class="disabled-list">
+	<section>
 		<h2>Dev Cycles</h2>
 		<ul>
-			<li>Artist Portal Beta </li> 
+			<li><h3> Artist Portal Beta </h3></li>
 				<ul>
 					<li><mark> Response messages for upload failure. Some response if uploads don't work. </mark> </li>
 					<li> Text changes. 
@@ -135,25 +133,57 @@
 						<li> Artist Profile Edit: University Affiliation description </li>
 						<li> SIgn in should be sign in </li>
 						<li> Schools should be Education </li>
+					</ul>  
+					<li> <mark>Change the artist statement to a csv/statement upload</mark></li>
+					<li><mark>Change image size on artwork-gallery show view so there isn't a scrollbar on the side:: More importantly be able to see the whole image in the quick view on the screen, so you don't have to scroll when arrowing through </mark></li>
+					<li><mark> Change the way typeahead search works. Will return only matches for the first letter in first name and last name versus any letter in the name match </mark></li>
+					<li> <mark>On homepage/landing page: shorten the space for the image/video </mark></li>
+					<li> <mark>Add an email confirmation after signing up </mark></li>	
+					<li><mark> Add in Education component to artists and ability to search by education </mark></li> 
+					<li> Add landing page icons onto help page </li>
+					<li> <mark>Add in terms and conditions </mark></li> 
+					<li> <mark>Sideload media so that it appears on Artwork edit page even with poor internet connection </mark></li>
+					<li> Add a file upload button for adding artworks from a folder (not via drag and drop)</li>
+					<li> <marK>Add conditional image licencing agreement/contract download similar to W9 (9dot can upload one for the artist taht the artist can sign and upload signed copy)</mark></li>
+					<li> Artist must have the ability to accept purchase orders </li>
+					<li> Purchase order and invoice management and notification for artists </li>
+					<li><mark> Depth and Weight should NOT be required fields </mark></li>
+					<li><mark> Change the search area on contacts and organizations pages to fixed </mark></li>
+					<li> <mark>Timestamp for users added is off </mark></li>
+					<li> <mark>Make cursor appear on email textfield when navigate to login </mark></li> 
+					<li> Set up Production Server fo 9/19 launch </li>
+				</ul>
+			<li><h3> Project Management : Beyond what is speced out above </h3></li>
+		  <ul>
+				<li> <h3>Notification System </h3></li>
+					<ul> 
+						<li>
+							Get original consignment language from Martha
+						</li>
+						<li> Artists Should be notified everytime a work has moced "states" :: NINEdot to provide language 
+							<ul> 
+								<li> Brainstorm </li>
+								<li> Consignment request </li>
+								<li> Presentation </li>
+								<li>  Return </li>
+								<li> Proposal (1.0, 2.0, 3.0) </li>
+								<li>  Purchase Order </li>
+								<li> Invoice received (will this show up for the artists or will this be an internal NDA notification?) </li>
+								<li> Past invoices with date paid </li>
+							</ul>
+						</li>
 					</ul>
-				</ul>  
-				<li> <mark>Change the artist statement to a csv/statement upload</mark></li>
-				<li><mark>Change image size on artwork-gallery show view so there isn't a scrollbar on the side:: More importantly be able to see the whole image in the quick view on the screen, so you don't have to scroll when arrowing through </mark></li>
-				<li><mark> Change the way typeahead search works. Will return only matches for the first letter in first name and last name versus any letter in the name match </mark></li>
-				<li> <mark>On homepage/landing page: shorten the space for the image/video </mark></li>
-				<li> <mark>Add an email confirmation after signing up </mark></li>	
-				<li><mark> Add in Education component to artists and ability to search by education </mark></li> 
-				<li> Add landing page icons onto help page </li>
-				<li> <mark>Add in terms and conditions </mark></li> 
-				<li> <mark>Sideload media so that it appears on Artwork edit page even with poor internet connection </mark></li>
-				<li> Add a file upload button for adding artworks from a folder (not via drag and drop)</li>
-				<li> <marK>Add conditional image licencing agreement/contract download similar to W9 (9dot can upload one for the artist taht the artist can sign and upload signed copy)</mark></li>
-				<li> Artist must have the ability to accept purchase orders </li>
-				<li> Purchase order and invoice management and notification for artists </li>
-				<li><mark> Depth and Weight should NOT be required fields </mark></li>
-				<li><mark> Change the search area on contacts and organizations pages to fixed </mark></li>
-				<li> <mark>Timestamp for users added is off </mark></li>
-				<li> <mark>Make cursor appear on email textfield when navigate to login </mark></li> 
+				<li><h3>Purchase Orders and Invoicing</h3> </li>
+					<ul> 
+						<li>
+							Add section to review their purchase orders (LIZ has started this)
+						</li>
+						<li> Artists must “accept” the purchase order -> add text from terms and conditions that says they agree to the size, price and delivery as shown. </li>
+						<li> Change text to show view of “past invoices” </li>
+						<li> Show date paid on “past invoices” </li>
+						<li>  Add link to show sample invoice template (no sticky notes ) </li>
+					</ul>
+			</ul>
 		</ul>
 	</section>
 	<section id="backlog" class="disabled-list">
@@ -163,6 +193,7 @@
 			<li> Artwork Tracking System/Artwork Consignment: </li>
 				<ul>
 					<li> A way to track where an artwork is that has been requested for delivery (with artist, being delivered, in house, being returned, returned). </li>
+					<li>  NDA issues delivery request by ______ date *add description of shipping and delivery from terms and conditions page </li>
 					<li> This system should includea way for NINEdot to request an artwork for delivery on a specific date, the ability for the artist to accept that request (or deny it) and specify the date and time of delivery and the medium of delivery (in person versus by mail) :: Yes, they can deliver in person with a date and time request *confirm text // Yes, they can deliver and will ship the piece in with shipping details *confirm text // No, they cannot deliver the piece *confirm text</li>
 					<li> The system will allow for the artist to be able to sign a consignment consent form or a waiver that protects NINEdot from damages while the artwork is in their possession. </li>
 					<li>A view to show what artworks are being delivered, in house or returned. </li>
