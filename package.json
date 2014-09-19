@@ -28,6 +28,7 @@
     "ember-cli-qunit": "0.0.5",
     "express": "^4.8.5",
     "glob": "^4.0.5",
-    "broccoli-ruby-sass": "~0.2.0"
-  } 
+    "broccoli-ruby-sass": "~0.2.0",
+    "ember-cli-deploy": "0.0.1"
+  }
 }
