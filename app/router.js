@@ -12,6 +12,7 @@ Router.map(function() {
 	this.resource('project', function() {
 		this.route('dotfolio');
 		this.route('shopify-theme');
+		this.route('dyna-reem');
 	});
 
 	this.resource('client', function() {
@@ -21,7 +22,6 @@ Router.map(function() {
 		this.route('play-plus-record');
 		this.route('34-degrees');
 		this.route('laura-krudener');
-		this.route('taxi');
 		this.route('shiftcloud');
 	});
 });
