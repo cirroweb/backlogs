@@ -1,0 +1,23 @@
+{
+  "manifest": {
+    "manifest": "firstiwaslike",
+    "manifestSize": 10
+  },
+
+  "redis": {
+    "development": {
+      "host": "localhost",
+      "port": 6379
+    },
+
+    "staging": {
+      "host": "<your staging host>",
+      "port": 6379
+    },
+
+    "production": {
+      "host": "<your production host>",
+      "port": 6379
+    }
+  }
+}
