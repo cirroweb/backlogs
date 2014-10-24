@@ -4,7 +4,6 @@ deploy.json
 
 
 # compiled output
-/dist
 /tmp
 
 # dependencies
