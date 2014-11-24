@@ -3,9 +3,10 @@
 var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 var app = new EmberApp({
-	fingerprint: {
-    prepend: 'https://drg7kf1hyvttc.cloudfront.net/'
-  }
+	// The fingerprint is only used for S3 deoloyment
+	// fingerprint: {
+ //    prepend: 'https://drg7kf1hyvttc.cloudfront.net/'
+ //  }
 });
 
 // Use `app.import` to add additional libraries to the generated

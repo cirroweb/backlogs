@@ -1,3 +1,5 @@
+// This is based on http://bit.ly/1tydiVw
+
 var EXPIRE_IN_2030 = new Date('2030');  
 var TWO_YEAR_CACHE_PERIOD_IN_SEC = 60 * 60 * 24 * 365 * 2;
 
@@ -23,6 +25,36 @@ module.exports = function(grunt) {
       }
     },
 
+    upload: {
+      options: {
+        storeConfig: redisConfig
+      },
+      bootstrapIndex: {
+        options: manifestSettings,
+        files: [
+          { src: 'dist/index.html' }
+        ]
+      }
+    },
+    
+    listUploads: {
+      options: {
+        storeConfig: redisConfig
+      },
+      dist: {
+        options: manifestSettings
+      }
+    },  
+    
+    deploy: {
+      options: {
+        storeConfig: redisConfig
+      },
+      dist: {
+        options: manifestSettings
+      }
+    },
+
     s3: {
       options: {
         accessKeyId: '<%= aws.key %>',
@@ -37,33 +69,6 @@ module.exports = function(grunt) {
         cwd: 'dist',
         src: 'assets/**'
       },
-      upload: {
-        options: {
-          storeConfig: redisConfig
-        },
-        bootstrapIndex: {
-          options: manifestSettings,
-          files: [
-            { src: 'dist/index.html' }
-          ]
-        }
-      },
-      listUploads: {
-        options: {
-          storeConfig: redisConfig
-        },
-        dist: {
-          options: manifestSettings
-        }
-      },
-      deploy: {
-        options: {
-          storeConfig: redisConfig
-        },
-        dist: {
-          options: manifestSettings
-        }
-      }
     }
   });
 

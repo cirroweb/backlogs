@@ -29,10 +29,14 @@
     "express": "^4.8.5",
     "glob": "^4.0.5",
     "broccoli-ruby-sass": "~0.2.0",
-    "ember-cli-deploy": "0.0.1",
     "grunt": "~0.4.5",
     "grunt-aws": "~0.3.0",
     "grunt-shell": "~1.1.1",
-    "grunt-rt-deployinator": "~0.1.2"
+    "grunt-rt-deployinator": "~0.1.2",
+    "deployinator": "~0.5.0",
+    "emberfire": "~1.2.7"
+  },
+  "dependencies": {
+    "firebase": "~1.1.3"
   }
 }
