@@ -69,13 +69,35 @@ module.exports = function(grunt) {
         cwd: 'dist',
         src: 'assets/**'
       },
+    },
+
+    git_subtree_add: {
+        subtree: {
+            options: {
+                source: "https://github.com/cirroweb/backlogs.git",
+                branch: "gh-pages",
+                target: "dist"
+            }
+        }
+    },
+
+    git_subtree_push: {
+        subtree: {
+            options: {
+                source: "https://github.com/cirroweb/backlogs.git",
+                branch: "gh-pages",
+                target: "dist"
+            }
+        }
     }
+
   });
 
   grunt.registerTask('default', ['shell', 's3:build']);
   grunt.loadNpmTasks('grunt-shell');
   grunt.loadNpmTasks('grunt-aws');
   grunt.loadNpmTasks('grunt-rt-deployinator');
+  grunt.loadNpmTasks('grunt-cmv-git-subtree');
 
 }
 

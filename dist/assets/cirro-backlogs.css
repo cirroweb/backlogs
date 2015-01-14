@@ -24,8 +24,8 @@ nav, section {
   display: block; }
 
 ::selection {
-  background: black;
-  color: white;
+  background: #000;
+  color: #FFF;
   text-shadow: none; }
 
 html {
@@ -37,12 +37,12 @@ html {
   font-weight: 400; }
 
 body {
-  background: #f1f1f1;
-  color: #111111;
+  background: #F1F1F1;
+  color: #111;
   height: 100%;
   font-size: 1.2rem; }
   body.dark {
-    background: #111111;
+    background: #111;
     color: white; }
     body.dark a {
       color: white; }
@@ -51,29 +51,29 @@ body {
     body.dark a, body.dark li, body.dark p, body.dark h1, body.dark h2, body.dark h3, body.dark h4 {
       -webkit-font-smoothing: antialiased; }
     body.dark nav {
-      background: #111111; }
+      background: #111; }
     body.dark.info {
-      background: #111111; }
+      background: #111; }
       body.dark.info nav {
-        background: #111111; }
+        background: #111; }
   body.info {
-    background: #f9e1d5; }
+    background: #F9E1D5; }
     body.info a, body.info li, body.info p, body.info h1, body.info h2, body.info h3, body.info h4 {
       -webkit-font-smoothing: antialiased; }
     body.info nav {
-      background: #f9e1d5; }
+      background: #F9E1D5; }
 
 p {
   margin: 10px 0; }
 
 a {
-  color: #231f20;
+  color: #231F20;
   text-decoration: none;
   border-bottom: 1px solid;
   padding-bottom: 2px;
   cursor: pointer; }
   a:visited, a:hover {
-    color: #231f20;
+    color: #231F20;
     text-decoration: none;
     border-bottom: 1px solid;
     padding-bottom: 2px;
@@ -124,7 +124,7 @@ blockquote, q {
   quotes: none; }
 
 mark {
-  background-color: #e2edc1;
+  background-color: #E2EDC1;
   padding: 0.1rem 0;
   margin-left: 0; }
   mark.kind {
@@ -149,7 +149,7 @@ nav {
   right: 0;
   border-bottom: 3px solid;
   height: 60px;
-  background: #f1f1f1;
+  background: #F1F1F1;
   z-index: 100; }
   nav * a {
     border-bottom: none;
@@ -178,7 +178,7 @@ nav {
   height: 0; }
 
 .red {
-  color: #fe4a3b; }
+  color: #FE4A3B; }
 
 .container {
   padding: 0 0 6rem;
@@ -208,11 +208,11 @@ header {
   float: left;
   color: white; }
   .price-block:nth-child(1) .price-inner {
-    background: #41ad49; }
+    background: #41AD49; }
   .price-block:nth-child(2) .price-inner {
-    background: blue; }
+    background: #0000ff; }
   .price-block:nth-child(3) .price-inner {
-    background: #fe4a3b; }
+    background: #FE4A3B; }
   .price-block .price-inner {
     margin: 30px 20px 30px 0;
     min-height: 470px; }
@@ -226,7 +226,7 @@ header {
         bottom: -39px;
         left: 50%;
         margin-left: -20px;
-        color: white;
+        color: #FFF;
         font-size: 3.3rem;
         text-align: center;
         width: 40px;
@@ -264,3 +264,5 @@ header {
     text-align: center; }
     .cirro-list h1 a {
       border-bottom: none; }
+
+/*# sourceMappingURL=cirro-backlogs.css.map */
