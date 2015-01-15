@@ -23,6 +23,7 @@ $ bower install
 * Visit your app at http://localhost:4200.
 
 ## How to Deploy to gh-pages with one big grunt task
+This will add files, commit and push to github, then push to the gh-pages subtree :)
 ```bash
 $ grunt doit
 ```
