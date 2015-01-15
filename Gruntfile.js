@@ -13,7 +13,10 @@ module.exports = function(grunt) {
         command: 'ember build --environment production'
       },
       commit: {
-        command: 'git add . && git ci -m "build" && git push origin master'
+        command: "git add . && git ci -m 'build'"
+      },
+      push: {
+        command: 'git push origin master'
       }
     },
 
@@ -30,7 +33,7 @@ module.exports = function(grunt) {
   });
 
   grunt.registerTask('default', ['shell']);
-  grunt.registerTask('doit', ['shell:build', 'shell:commit', 'git_subtree_push']);
+  grunt.registerTask('doit', ['shell:build', 'shell:commit', 'shell:push', 'git_subtree_push']);
   grunt.loadNpmTasks('grunt-shell');
   grunt.loadNpmTasks('grunt-aws');
   grunt.loadNpmTasks('grunt-rt-deployinator');
