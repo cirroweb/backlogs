@@ -22,41 +22,9 @@ $ bower install
 * `ember server`
 * Visit your app at http://localhost:4200.
 
-## How to Deploy to gh-pages
-
-commit and push in master
+## How to Deploy to gh-pages with one big grunt task
 ```bash
-$ git add -A
-$ git ci -m 'some message'
-$ git push origin master
-```
-Until we find a solution we need to push the `/dist` folder to the branch gh-pages but when we build ember it clears the entire `/dist` folder. This is an issue because we need to keep the CNAME file in there for the DNS. 
-
-```bash
-# If there are others changes in the branch you will need to
-#	delete your local deploy branch
-$ git br -D deploy
-
-# Checkout deploy branch
-$ git co -b deploy 
-
-# Rebase off master
-$ git rebase master
-
-# Build the site
-$ ember build --environment production
-
-# Keep the CNAME file in the dist folder
-$ git co -- dist/CNAME
-$ git add -A
-$ git rebase --continue
-
-# Often your subtree push will fail so it is best to just remove 
-# the remote branch before pushing
-$ git push origin :gh-pages
-
-# Push to gh-pages subtree
-$ git subtree push --prefix dist origin gh-pages 
+$ grunt doit
 ```
 
 ### Code Generators
